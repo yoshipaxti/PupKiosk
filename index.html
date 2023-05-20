@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="This page is an example of PUP kiosk"/>
+  <meta name="author" content="Rowel Dacut"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/PUPlogo.png" type="image/x-icon"/>
+  <title>PUP kiosk</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <img class="logo" src="img/PUPlogo.png" alt="Logo">
+  <h1>Polytechnic University of the Philippines</h1>
+</header>
+<h2> Hover over the map, to view the Name, Description and Image of the location.</p>
+
+<div class="img-container">
+  <img src="img/PUPmap.png" alt="PUP Map" usemap="#PUPMap" width="566" height="425">
+  
+  <div id="modal1" class="modal">
+    <img src="img/PUPchapel.jpg" alt="PUP Chapel">
+    <p> <Strong>PUP Chapel</Strong> <br><br>
+    place of worship located within the PUP campus, often used by members of the university community for religious services and activities.</p>
+  </div>
+  <div id="modal2" class="modal">
+    <img src="img/PUPpool.jpg" alt="PUP Pool">
+    <p><Strong>PUP Pool</Strong> <br><br>
+    A facility within the PUP campus for swimming and aquatic activities.</p>
+  </div>
+  <div id="modal3" class="modal">
+    <img src="img/PUPoval.jpg" alt="PUP Oval">
+    <p><Strong>PUP Oval</Strong> <br><br>
+    A large circular park located at the PUP campus, often used for outdoor activities and events.</p>
+  </div>
+  <div id="modal4" class="modal">
+    <img src="img/PUPflagpole.jpg" alt="PUP Flag Pole">
+    <p><Strong>PUP Flag Pole</Strong> <br><br>
+    A tall flagpole standing near the PUP Main Building , where the Philippine flag is hoisted during ceremonies and special occasions.</p>
+  </div>
+  <div id="modal5" class="modal">
+    <img src="img/PUPgymnasium.png" alt="PUP Gymnasium">
+    <p><Strong>PUP Gymnasium</Strong> <br><br>
+    A sports facility within the PUP campus, used for various athletic events and activities.</p>
+  </div>
+  <div id="modal6" class="modal">
+    <img src="img/PUPlagoon.jpg" alt="PUP Lagoon">
+    <p><Strong>PUP Lagoon</Strong> <br><br>
+    A serene body of water surrounded by lush greenery, located within the PUP campus.</p>
+  </div>
+  <div id="modal7" class="modal">
+    <img src="img/PUPmaingate.jpg" alt="PUP Main Gate">
+    <p><Strong>PUP Main Gate</Strong> <br><br>
+    The main entrance of the PUP campus, often bustling with students, faculty, and visitors.</p>
+  </div>
+  <div id="modal8" class="modal">
+    <img src="img/PUPpasigstation.jpg" alt="PUP Pasig Station">
+    <p><Strong>PUP Pasig Station</Strong> <br><br>
+    A station located on the banks of the Pasig River that serves as a transportation hub for commuters going to and from PUP and other parts of Metro Manila.</p>
+  </div>
+  <div id="modal9" class="modal">
+    <img src="img/PUPpylon.jpg" alt="PUP Pylon">
+    <p><Strong>PUP Pylon</Strong> <br><br>
+    A tall structure located within the grounds of the Polytechnic University of the Philippines (PUP), often used as a landmark for direction-giving purposes.</p>
+  </div>
+  <div id="modal10" class="modal">
+    <img src="img/PUPobelisk.jpg" alt="PUP Obelisk">
+    <p><Strong>PUP Obelisk</Strong> <br><br>
+    A monument located in front of the PUP Main Building. The obelisk is dedicated to the memory of Apolinario Mabini, while the monument itself commemorates the contribution of national heroes and martyrs to Philippine history.</p>
+  </div>
+</div>
+
+<map name="PUPMap">
+  <area shape="circle" coords="278,336,41" alt="PUP Chapel" onmouseover="document.getElementById('modal1').style.display='block'">
+  <area shape="rect" coords="301,54,361,85" alt="PUP Pool" onmouseover="document.getElementById('modal2').style.display='block'">
+  <area shape="poly" coords="365,309,410,244,474,238,488,297,442,360" alt="PUP Oval" onmouseover="document.getElementById('modal3').style.display='block'">
+  <area shape="circle" coords="298, 249, 8" alt="PUP Flag Pole" onmouseover="document.getElementById('modal4').style.display='block'">
+  <area shape="rect" coords="375, 46, 462,93" alt="PUP Gymnasium" onmouseover="document.getElementById('modal5').style.display='block'">
+  <area shape="poly" coords="236, 120, 229, 170, 194, 216, 262, 202, 249, 166" alt="PUP Lagoon" onmouseover="document.getElementById('modal6').style.display='block'">
+  <area shape="circle" coords="514, 188, 8" alt="PUP Main Gate" onmouseover="document.getElementById('modal7').style.display='block'">
+  <area shape="rect" coords="112, 370, 125, 411" alt="PUP Pasig Station" onmouseover="document.getElementById('modal8').style.display='block'">
+  <area shape="circle" coords="514, 170, 9" alt="PUP Pylon" onmouseover="document.getElementById('modal9').style.display='block'">
+  <area shape="circle" coords="321, 187, 14" alt="PUP Obelisk" onmouseover="document.getElementById('modal10').style.display='block'">
+</map>
+
+<div class="footer">
+  <p>©   2023 PUP Kiosk. All rights reserved.</p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
